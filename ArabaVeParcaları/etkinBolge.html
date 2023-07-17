@@ -1,0 +1,131 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Etkin Bolge</title>
+<style type="text/css">
+	#resim {
+		height:90%;
+		border-left:1px solid #666666;
+		border-right:1px solid #666666;
+		width:70%;
+	}
+	#parca {
+		height:90%;
+		border-right:1px solid #666666;
+		width:30%;
+	}	
+	#mesaj {
+		height:5%;
+		background-color:#CCCCCC;
+		color:#fff;
+		text-align:center;
+		font-family:Verdana, Arial, Helvetica, sans-serif;
+		font-size:16px;
+		border:1px solid #666666;
+	}	
+	#aciklama {
+		height:5%;
+		background-color:#CCCCCC;
+		color:#333333;
+		text-align:center;
+		font-family:Verdana, Arial, Helvetica, sans-serif;
+		font-size:16px;		
+		border:1px solid #666666;
+	}	
+	#araba{
+		box-shadow:3px 3px 3px gray;	
+	}	
+</style>
+<script language="javascript" type="text/javascript">
+	function tanimla(id){
+		switch(id){
+			case 1:
+				mesaj.innerHTML="Ön cam";
+				break;
+			case 2:
+				mesaj.innerHTML="sağ ön far (dış)";
+				break;
+			case 3:
+				mesaj.innerHTML="sağ ön far (iç)";
+				break;
+			case 4:
+				mesaj.innerHTML="Sağ ön kapı";
+				break;
+			case 5:
+				mesaj.innerHTML="Ön kaput";
+				break;	
+			case 6:
+				mesaj.innerHTML="Sağ Cam";
+				break;	
+			case 7:
+				mesaj.innerHTML="Sağ Kelebek Cam";
+				break;	
+			case 8:
+				mesaj.innerHTML="Sağ Ön Tekerlek";
+				break;	
+			case 9:
+				mesaj.innerHTML="Sağ Arka Tekerlek";
+				break;	
+			case 10:
+				mesaj.innerHTML="Sağ Arka Çamurluk";
+				break;	
+			case 11:
+				mesaj.innerHTML="Sağ Ön Çamurluk";
+				break;	
+			case 12:
+				mesaj.innerHTML="Izgara";
+				break;	
+			case 13:
+				mesaj.innerHTML="Ön Etek";
+				break;	
+			case 14:
+				mesaj.innerHTML="Sol Yan Etek";
+				break;	
+			default:
+				mesaj.innerHTML="Araç tanıtım sayfası sürüm 1.0";
+				break;																		
+		}//switch
+	}//end of tanimla	
+</script>
+</head>
+<body>
+<table width="100%"  height="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td colspan="2" id="mesaj">
+    	Burada resim aciklamasi goruntulencek
+    </td>
+  </tr>
+  <tr>
+    <td id="resim" align="center" valign="middle">
+   	  <img src="araba.jpg" alt="Acar ha!" name="araba" border="0" usemap="#arabaMap" id="araba" />
+    </td>
+    <td id="parca" align="center" valign="middle">
+    <!--burada parcalar goruntulenecek -->	
+    <iframe name="hedef" src="" width="100%" height="100%" frameborder="0"></iframe>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" id="aciklama" >
+    Tasarım ve kodlama Berkant DÜLGER
+    </td>
+  </tr>
+</table>
+
+<map name="arabaMap">
+  <area  onMouseOut="tanimla(20)" onMouseOver="tanimla(1)" shape="poly" coords="234,145,235,146,259,143,275,141,307,141,345,139,409,139,442,141,451,140,434,123,400,103,382,90,327,85,253,85,219,91,220,102" href="http://www.bilalsert.com.tr">
+  <area onMouseOut="tanimla(20)"  onMouseOver="tanimla(2)" shape="circle" coords="389,208,14" href="#">
+  <area onMouseOut="tanimla(20)"  onMouseOver="tanimla(3)" shape="circle" coords="422,206,13" href="#">
+  <area onMouseOut="tanimla(20)"  onMouseOver="tanimla(4)" shape="poly" coords="123,143,136,147,153,147,167,147,183,144,208,146,218,146,215,170,216,223,221,277,100,253,96,209,106,170" href="sagOnKapi.png" target="hedef">
+  <area onMouseOut="tanimla(20)"  onMouseOver="tanimla(5)"  shape="poly" coords="259,150,279,153,325,161,351,171,373,180,397,182,458,176,540,171,619,174,579,162,528,153,468,143,265,148" href="#">
+  <area onMouseOver="tanimla(8)" shape="poly" coords="260,210,250,228,246,243,244,259,244,271,246,287,255,302,265,315,290,320,300,322,280,322,302,317,312,314,322,296,322,279,322,254,319,237,310,218,301,209,288,205,278,204" href="#">
+  <area onMouseOver="tanimla(9)" shape="poly" coords="78,269,68,274,62,273,56,268,53,258,51,250,49,240,50,226,52,212,54,197,59,188,64,184,72,182,75,188,81,196,84,203,85,243,85,255,87,224,87,218" href="#">
+  <area onMouseOver="tanimla(6)" shape="poly" coords="194,143,204,143,215,143,215,133,211,126,208,115,203,105,200,98,190,94,176,93,168,93,160,94,154,97,152,103,148,112,142,124,137,135,137,140,150,140,151,133,156,128,160,125,167,124,173,124,180,124,184,125,187,128,189,132,189,136,190,140,192,143" href="#">
+  <area onMouseOver="tanimla(7)" shape="poly" coords="132,140,121,134,111,126,115,120,126,108,137,98,146,94,154,94" href="#">
+  <area onMouseOver="tanimla(13)" shape="poly" coords="332,264,338,283,344,296,349,302,360,305,370,306,397,309,421,310,444,309,473,308,506,305,538,304,563,302,594,297,611,294,620,291,624,290,641,299,632,303,623,305,603,304,590,307,575,311,563,315,543,315,526,317,507,317,485,319,469,319,451,321,440,326,421,326,404,326,373,325,358,323,337,318,333,312,331,305" href="#">
+  <area onMouseOver="tanimla(12)" shape="poly" coords="434,219,437,206,436,195,509,193,564,192,591,191,592,210,588,212" href="#">
+  <area onMouseOver="tanimla(14)" shape="poly" coords="102,251,131,257,173,267,212,276,246,283,247,296,235,296,188,284,155,277,129,270,109,265" href="#">
+  <area onMouseOver="tanimla(11)" shape="poly" coords="326,241,316,223,302,203,285,194,274,193,262,196,256,202,250,212,246,225,245,231,241,230,242,223,242,216,245,208,248,200,253,195,258,191,267,187,281,186,294,187,303,193,312,200,321,220,325,234" href="#">
+  <area onMouseOver="tanimla(10)" shape="poly" coords="95,235,85,200,78,184,60,177,52,189,51,198,49,190,51,183,54,177,58,172,65,173,75,175,80,179,85,193,89,205,95,230" href="#">
+</map>
+</body>
+</html>
